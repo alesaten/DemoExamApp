@@ -20,31 +20,32 @@
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <TextBlock Grid.Column="0" Grid.Row="0" Text="Номер заказа" FontSize="20" FontFamily="Comic Sans MS" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-        <TextBox x:Name="OrderNumber_textBox" Grid.Column="1" Grid.Row="0" Width="270" Height="40" FontSize="20"
-                 BorderBrush="#FF498C51" BorderThickness="2" FontFamily="Comic Sans MS" VerticalAlignment="Center" HorizontalAlignment="Center">
-        </TextBox>
+        <TextBox x:Name="OrderNumber_textBox" Grid.Column="1" Width="270" Height="40" FontSize="20"
+                 BorderBrush="#FF498C51" BorderThickness="2" FontFamily="Comic Sans MS" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="38,0,0,0"/>
         <TextBlock Grid.Column="0" Grid.Row="1" Text="Клиент" FontSize="20" FontFamily="Comic Sans MS" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-        <ComboBox x:Name="Client_comboBox" Grid.Row="1" Grid.Column="1" Width="270" Height="40" FontSize="20" FontFamily="Comic Sans MS" 
-                  BorderBrush="#FF498C51" BorderThickness="2" VerticalAlignment="Center" HorizontalAlignment="Center">
-        </ComboBox>
-        <Button x:Name="AddClient_button" Grid.Column="1" Grid.Row="1" Width="40" Height="40" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20"
-                FontFamily="Comic Sans MS" Margin="350,0,0,0" Foreground="{x:Null}">
-            <Button.Background>
-                <ImageBrush ImageSource="/Добавить.png"/>
-            </Button.Background>
-        </Button>
+        <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Width="325">
+            <ComboBox x:Name="Client_comboBox" Width="270" Height="40" FontSize="20" FontFamily="Comic Sans MS" 
+                BorderBrush="#FF498C51" BorderThickness="2" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+            <Button x:Name="AddClient_button" Width="40" Height="40" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20"
+                FontFamily="Comic Sans MS" Margin="285,0,0,0" Foreground="{x:Null}">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Добавить.png"/>
+                </Button.Background>
+            </Button>
+        </Grid>
         <TextBlock Grid.Column="0" Grid.Row="2" Text="Услуга" FontSize="20" FontFamily="Comic Sans MS" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-        <ComboBox x:Name="Service_comboBox" Grid.Row="2" Grid.Column="1" Width="270" Height="40" FontSize="20" FontFamily="Comic Sans MS" 
-                  BorderBrush="#FF498C51" BorderThickness="2" VerticalAlignment="Center" HorizontalAlignment="Center">
-        </ComboBox>
-        <Button x:Name="AddService_button" Grid.Column="1" Grid.Row="2" Width="40" Height="40" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20"
-                Margin="350,0,0,0" Foreground="{x:Null}">
-            <Button.Background>
-                <ImageBrush ImageSource="/Добавить.png"/>
-            </Button.Background>
-        </Button>
-        <Button x:Name="FormOrder_button" Grid.Column="1" Grid.Row="3" Width="267" Height="35" HorizontalAlignment="Center" VerticalAlignment="Top" Content="Оформить заказ" FontSize="20"
-                FontFamily="Comic Sans MS" Background="#76e383" BorderBrush="#FF498C51" BorderThickness="2" Margin="0,10,0,0">
+        <Grid Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Width="325">
+            <ComboBox x:Name="Service_comboBox" Width="270" Height="40" FontSize="20" FontFamily="Comic Sans MS" 
+                BorderBrush="#FF498C51" BorderThickness="2" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+            <Button x:Name="AddService_button" Width="40" Height="40" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20"
+                Margin="285,0,0,0" Foreground="{x:Null}">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Добавить.png"/>
+                </Button.Background>
+            </Button>
+        </Grid>
+        <Button x:Name="FormOrder_button" Grid.Column="1" Grid.Row="3" Width="267" Height="34" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Оформить заказ" FontSize="20"
+                FontFamily="Comic Sans MS" Background="#76e383" BorderBrush="#FF498C51" BorderThickness="2" Margin="41,10,0,0">
         </Button>
         <Button x:Name="FormQR_button" Grid.Column="0" Grid.Row="3" Width="267" Height="35" HorizontalAlignment="Center" VerticalAlignment="Top" Content="Сформировать штрих-код" 
                 FontSize="20" FontFamily="Comic Sans MS" Background="#76e383" BorderBrush="#FF498C51" BorderThickness="2" Margin="0,10,0,0">
