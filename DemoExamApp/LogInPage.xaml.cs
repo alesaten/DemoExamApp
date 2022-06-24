@@ -27,7 +27,8 @@ namespace DemoExamApp
 
         private void LogInButton_Click(object sender, RoutedEventArgs e)
         {
-
+            ActionsPage ActPage = new ActionsPage();
+            NavigationService.Navigate(ActPage);
         }
 
         private void SignInButton_Click(object sender, RoutedEventArgs e)

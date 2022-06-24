@@ -16,14 +16,18 @@ using System.Windows.Shapes;
 namespace DemoExamApp
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для ActionsPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ActionsPage : Page
     {
-        public MainWindow()
+        public ActionsPage()
         {
             InitializeComponent();
-            MainFrame.Navigate(new LogInPage());
+        }
+
+        private void FormOrder_button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
