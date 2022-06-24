@@ -19,22 +19,21 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <TextBlock Grid.Column="1" Grid.Row="0" Text="Логин" FontSize="20" FontFamily="Comic Sans MS"/>
-        <TextBox x:Name="LogIn_textBox" Grid.Column="1" Grid.Row="0" Width="270" Height="40" FontSize="20"
-                 BorderBrush="#FF498C51" BorderThickness="2" FontFamily="Comic Sans MS" VerticalAlignment="Center" HorizontalAlignment="Center">
-        </TextBox>
-        <TextBlock Grid.Column="1" Grid.Row="1" Text="Пароль" FontSize="20" FontFamily="Comic Sans MS"/>
-        <PasswordBox x:Name="Password_passwordBox" Grid.Column="1" Grid.Row="1" Width="270" Height="40" FontSize="20" 
+        <TextBlock Grid.Column="1" Grid.Row="0" Text="Логин" FontSize="20" FontFamily="Comic Sans MS" Margin="10,0,9,0"/>
+        <TextBox x:Name="LogIn_textBox" Grid.Column="1" Width="247" Height="40" FontSize="20"
+                 BorderBrush="#FF498C51" BorderThickness="2" FontFamily="Comic Sans MS" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock Grid.Column="1" Grid.Row="1" Text="Пароль" FontSize="20" FontFamily="Comic Sans MS" Margin="10,0,10,0"/>
+        <PasswordBox x:Name="Password_passwordBox" Grid.Column="1" Grid.Row="1" Width="247" Height="40" FontSize="20" 
                      BorderBrush="#FF498C51" BorderThickness="2" FontFamily="Comic Sans MS" VerticalAlignment="Center" HorizontalAlignment="Center"/>
         <TextBox x:Name="Password_textBox" Grid.Column="1" Grid.Row="1" Width="270" Height="40" FontSize="20" 
                      BorderBrush="#FF498C51" BorderThickness="2" FontFamily="Comic Sans MS" VerticalAlignment="Center" HorizontalAlignment="Center" Visibility="Hidden"/>
         <Button x:Name="ShowPassword_button" Grid.Column="2" Grid.Row="1" Width="70" Height="40"
                 HorizontalAlignment="Left" VerticalAlignment="Center" Content="Показать" FontSize="14" FontFamily="Comic Sans MS" 
                 Background="#76e383" BorderBrush="#FF498C51" BorderThickness="2" Margin="10,0,0,0" Click="ShowPassword_button_Click"/>
-        <Button x:Name="LogIn_button" Grid.Column="1" Grid.Row="3" Width="267" Height="35" HorizontalAlignment="Center" VerticalAlignment="Top" Content="Войти" FontSize="20"
+        <Button x:Name="LogIn_button" Grid.Column="1" Grid.Row="2" Width="247" Height="35" HorizontalAlignment="Center" VerticalAlignment="Top" Content="Войти" FontSize="20"
                 FontFamily="Comic Sans MS" Background="#76e383" BorderBrush="#FF498C51" BorderThickness="2" Margin="0,10,0,0" Click="LogInButton_Click">
         </Button>
-        <Button x:Name="SignIn_button" Grid.Column="1" Grid.Row="2" Width="267" Height="35" HorizontalAlignment="Center" VerticalAlignment="Top" Content="Зарегистрироваться" 
+        <Button x:Name="SignIn_button" Grid.Column="1" Grid.Row="2" Width="247" Height="35" HorizontalAlignment="Center" VerticalAlignment="Top" Content="Зарегистрироваться" 
                 FontSize="20" FontFamily="Comic Sans MS" Background="#76e383" BorderBrush="#FF498C51" BorderThickness="2" Margin="0,50,0,0" Click="SignInButton_Click">
         </Button>
     </Grid>
